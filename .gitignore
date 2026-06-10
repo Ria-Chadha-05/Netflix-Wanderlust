@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Environment variables — never commit these
+.env
+.env.local
+.env.*.local
+
+# Editor & OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+
+# TanStack generated files (auto-regenerated)
+src/routeTree.gen.ts
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,66 @@
+# ─── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+
+# ─── Next.js build output ────────────────────────────────────────────────────
+.next/
+out/
+
+# ─── Production build ────────────────────────────────────────────────────────
+dist/
+build/
+
+# ─── Environment variables ───────────────────────────────────────────────────
+# Commit .env.example but never the real ones
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ─── TypeScript ──────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── Package manager lock files (pick one to keep, ignore the rest) ──────────
+# If you use npm → keep package-lock.json, ignore the others
+yarn.lock
+pnpm-lock.yaml
+
+# ─── Editor / IDE ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ─── Temporary files ─────────────────────────────────────────────────────────
+*.tmp
+*.swp
+*.bak
+
+# ─── Vercel / Netlify deployment ─────────────────────────────────────────────
+.vercel/
+.netlify/
+
+# ─── Testing ─────────────────────────────────────────────────────────────────
+coverage/
+jest-test-results.json
+
+# ─── Misc ────────────────────────────────────────────────────────────────────
+.cache/
+*.pem
