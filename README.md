@@ -17,6 +17,11 @@ Built to practice **responsive design, animations, modern UI development, and in
 Wanderlust transforms travel discovery into a Netflix-like experience where destinations are presented as featured content.
 
 Users can browse through curated locations, explore destination highlights, and enjoy a visually engaging interface designed to make travel inspiration feel interactive and cinematic.
+---
+
+## 🚀 Live Demo
+
+🔗 https://your-vercel-url.vercel.app
 
 ---
 
