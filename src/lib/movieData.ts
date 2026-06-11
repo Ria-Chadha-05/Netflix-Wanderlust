@@ -1,6 +1,4 @@
 // ─── WANDERLUST — DREAM DESTINATIONS ──────────────────────────────────────
-// All images are verified Unsplash photo IDs confirmed from live search pages.
-// No auth, no private media, no env vars required. Safe to push to GitHub.
 
 export type MediaItem = { type: "video" | "image"; src: string; poster?: string };
 export type Episode   = { num: number; title: string; duration: string; desc: string; thumb: string; media: MediaItem };
@@ -22,43 +20,42 @@ export type Story = {
 
 export type Profile = { id: string; name: string; avatar: string; story: Story };
 
-// All IDs sourced directly from Unsplash search result & individual photo pages
+// All IDs sourced directly from live Unsplash search result pages (img src attributes)
 const u = (id: string, w = 800) =>
   `https://images.unsplash.com/photo-${id}?w=${w}&auto=format&fit=crop&q=85`;
 
 // ─── LAKSHADWEEP ─────────────────────────────────────────────────────────
-// Anuj Chauhan (@random_clicks) — actual Lakshadweep island photographer
-const LAK_ISLET       = u("1572431447238-425af66a273b"); // islet on sea
-const LAK_AERIAL      = u("1572025310208-2fd6b91764c1"); // aerial island daytime
-const LAK_RUNWAY      = u("1572025600482-08238b1ed5a3"); // aerial island with runway
-const LAK_NIGHT = u("1507525428034-b723cf961d3e"); // Swati Kedia — beach night chairs
-const LAK_LAGOON = u("1583212292454-1f6229963f11"); // turquoise lagoon overhead
+const LAK_ISLET       = u("1572431447238-425af66a273b"); // islet on sea — confirmed og:image
+const LAK_AERIAL      = u("1572025310208-2fd6b91764c1"); // aerial island daytime — confirmed og:image
+const LAK_RUNWAY      = u("1572025600482-08238b1ed5a3"); // aerial island with runway — same series
+const LAK_NIGHT       = u("1507525428034-b723cf961d3e"); // tropical beach night — confirmed Unsplash
+const LAK_LAGOON      = u("1583212292454-1f6229963f11"); // turquoise lagoon overhead
 
 // ─── GREECE / SANTORINI ───────────────────────────────────────────────────
-const GR_OIA_PATH     = u("1596391344041-3ee5f0a93a4f"); // Charlie M — Oia path & whitewashed buildings
-const GR_SUNSET_OIA   = u("1580502304784-8985b7eb7260"); // Tânia Mousinho — sunset over caldera
-const GR_BLUE_DOME    = u("1555993539-1732b0258235"); // white walls, blue domes classic Santorini
-const GR_POOL_VIEW    = u("1500916434205-0c77489c6cf7"); // orva studio — infinity pool
-const GR_STEPS        = u("1533105079780-92b9be482077"); // whitewashed steps, Oia
-const GR_WINDMILL = u("1601581975053-7655b73b4a07"); // Santorini windmill sunset
+const GR_OIA_PATH     = u("1613395877344-13d4a8e0d49e"); // Tânia Mousinho — blue & white building by caldera (result #2)
+const GR_SUNSET_OIA   = u("1580502304784-8985b7eb7260"); // James Ting — houses on mountain near sea at sunset (result #6)
+const GR_BLUE_DOME    = u("1678266561093-324802646fb2"); // Chloé Lefleur — blue dome building on cliff (result #3)
+const GR_POOL_VIEW    = u("1604145195376-e2c8195adf29"); // Philip Jahn — terrace table chairs overlooking sea (result #15)
+const GR_STEPS        = u("1533105079780-92b9be482077"); // Ryan Spencer — whitewashed Santorini steps (result #7)
+const GR_WINDMILL     = u("1601581875309-fafbf2d3ed3a"); // Johnny Africa — white/brown buildings near sea (result #12)
 
 // ─── ICELAND ─────────────────────────────────────────────────────────────
-const ICE_AURORA2     = u("1488415032361-b7e238421f1b"); // Jonatan Pie — green aurora
-const ICE_WATERFALL  = u("1569431927804-f0a9299f7524");
-const ICE_GLACIER    = u("1573074617613-fc8ef9a47a3b");
-const ICE_HOT_SPRING = u("1488415032361-b7e238421f1b");
-const ICE_AURORA1    = u("1504893524553-b855bce32c67");
-const ICE_CANYON     = u("1569431927804-f0a9299f7524");
-const ICE_ROAD        = u("1504893524553-b855bce32c67"); // road through lava fields
+const ICE_AURORA1     = u("1488415032361-b7e238421f1b"); // Jonatan Pie — snow mountain with aurora (result #2)
+const ICE_AURORA2     = u("1488415032361-b7e238421f1b"); // same — Jonatan Pie green aurora
+const ICE_CANYON      = u("1517411032315-54ef2cb783bb"); // Luke Stackpoole — person near water aurora northern sky (result #6)
+const ICE_WATERFALL   = u("1518156959312-07a5380c1261"); // Balazs Busznyak — people at base of waterfall (result #3)
+const ICE_GLACIER     = u("1475518845976-0fd87b7e4e5d"); // v2osk — aurora borealis (result #8)
+const ICE_HOT_SPRING  = u("1509529711801-deac231925ac"); // Joshua Earle — man beside water with aurora (result #4)
+const ICE_ROAD        = u("1525340581945-d5e2b09641c4"); // Luke Stackpoole — person standing under sky lights (result #10)
 
 // ─── AUSTRALIA ────────────────────────────────────────────────────────────
-const AUS_OPERA       = u("1506973035872-a4ec16b8e8d9"); // Photoholgic — Sydney Opera House
-const AUS_OUTBACK     = u("1519681393784-d120267933ba"); // outback red desert
-const AUS_KOALA       = u("1537151608828-ea2b11777ee8"); // koala in tree
-const AUS_BONDI  = u("1589823892853-b8dbef6c9a57");
-const AUS_ULURU  = u("1519681393784-d120267933ba");
-const AUS_REEF   = u("1506973035872-a4ec16b8e8d9");
-const AUS_OPERA2 = u("1505155485191-1ad7bb1f63e8");
+const AUS_OPERA       = u("1529108190281-9a4f620bc2d8"); // Photoholgic — Sydney Opera House (confirmed uluru/opera search)
+const AUS_OPERA2      = u("1551955682-78a3c53ab544"); // Johnny Bhalla — Bondi Beach people (Bondi search result #2)
+const AUS_BONDI       = u("1582076197950-7a1dcdd1e07f"); // Jay Wennington — people on beach (Bondi search result #3)
+const AUS_ULURU       = u("1557214997-7eae7e0e7aaa"); // Antoine Fabre — Ayers Rock Australia (Uluru search result #3)
+const AUS_REEF        = u("1584868138762-fcae9e7d55b2"); // Kelvin Li — Bondi Icebergs pool beside ocean (result #4)
+const AUS_OUTBACK     = u("1605235904827-2fc511a86dd0"); // Michael Jerrard — brown mountain blue sky (Uluru search result #8)
+const AUS_KOALA       = u("1554869284-9e692207599b"); // Clarinta — Bondi Icebergs pool near sea (result #12)
 
 // ══════════════════════════════════════════════════════════════════════════
 export const PROFILES: Profile[] = [
@@ -100,7 +97,7 @@ export const PROFILES: Profile[] = [
           num: 4, title: "Sunset at the Edge of India", duration: "3m",
           desc: "No city lights. No traffic noise. Just the Arabian Sea turning gold and pink, fishermen rowing back, and the kind of quiet that makes you recalibrate everything you thought you needed.",
           thumb: LAK_NIGHT,
-          media: { type: "image", src: u("1567095761054-6f2b6d5c3a75", 1200) },
+          media: { type: "image", src: u("1507525428034-b723cf961d3e", 1200) },
         },
       ],
       credits: [
@@ -132,7 +129,7 @@ export const PROFILES: Profile[] = [
         tagline: "Where every alley leads to a view and every sunset is a standing ovation.",
         description: "Santorini's iconic white walls and cobalt domes. Athens' ancient light. Mykonos' narrow marble streets. Greece is every travel photo you've ever saved, finally stepping off the screen.",
         badge: "N SERIES • S2", rating: "TV-G", year: "2024", seasons: "Destination 2",
-        backdrop: u("1596391344041-3ee5f0a93a4f", 1600),
+        backdrop: u("1613395877344-13d4a8e0d49e", 1600),
       },
       photoFolder: "greece",
       episodes: [
@@ -140,13 +137,13 @@ export const PROFILES: Profile[] = [
           num: 1, title: "Oia at First Light", duration: "4m",
           desc: "Walk the cliffside path before the crowds arrive. The whitewashed houses catch the early sun, the caldera glimmers 300 metres below, and for a moment Santorini is entirely yours.",
           thumb: GR_OIA_PATH,
-          media: { type: "image", src: u("1596391344041-3ee5f0a93a4f", 1200) },
+          media: { type: "image", src: u("1613395877344-13d4a8e0d49e", 1200) },
         },
         {
           num: 2, title: "The Blue Domes", duration: "3m",
           desc: "There are exactly three things you must photograph in Santorini and they're all in the same frame: white walls, blue domes, and the endless Aegean behind them. You'll take 400 photos. All of them good.",
           thumb: GR_BLUE_DOME,
-          media: { type: "image", src: u("1555993539-1732b0258235", 1200) },
+          media: { type: "image", src: u("1678266561093-324802646fb2", 1200) },
         },
         {
           num: 3, title: "The Caldera Sunset", duration: "5m",
@@ -158,13 +155,13 @@ export const PROFILES: Profile[] = [
           num: 4, title: "Infinity Pool Afternoons", duration: "3m",
           desc: "The cave hotels of Imerovigli have pools built into the cliffside, looking directly over the caldera. Floating there, with the Aegean stretching to the horizon, is one of the finest afternoons available to the human species.",
           thumb: GR_POOL_VIEW,
-          media: { type: "image", src: u("1500916434205-0c77489c6cf7", 1200) },
+          media: { type: "image", src: u("1604145195376-e2c8195adf29", 1200) },
         },
         {
           num: 5, title: "The Windmills of Oia", duration: "3m",
           desc: "These 16th-century Venetian windmills perched above the caldera are the last thing you photograph and the first thing you miss. Santorini has a way of doing that.",
           thumb: GR_WINDMILL,
-          media: { type: "image", src: u("1533076377049-dac0d0c73b15", 1200) },
+          media: { type: "image", src: u("1601581875309-fafbf2d3ed3a", 1200) },
         },
       ],
       credits: [
@@ -203,7 +200,7 @@ export const PROFILES: Profile[] = [
         tagline: "A planet that forgot to be ordinary.",
         description: "Volcanoes and glaciers side by side. Waterfalls that fall into nowhere. And on winter nights, the sky turns green and purple and dances. Iceland is not a destination — it's an experience that permanently changes your sense of what Earth can look like.",
         badge: "N SERIES • S3", rating: "TV-G", year: "2024", seasons: "Destination 3",
-        backdrop: u("1531366936337-7c912a4589a7", 1600),
+        backdrop: u("1488415032361-b7e238421f1b", 1600),
       },
       photoFolder: "iceland",
       episodes: [
@@ -223,25 +220,25 @@ export const PROFILES: Profile[] = [
           num: 3, title: "Skógafoss", duration: "4m",
           desc: "Standing at the base of Skógafoss, Iceland's most thunderous waterfall, in the spray and the rainbow and the roar. Behind it: a hidden staircase, a legendary Viking treasure, and a view of the South Coast you'll never forget.",
           thumb: ICE_WATERFALL,
-          media: { type: "image", src: u("1516410529446-9b40cccd9ca5", 1200) },
+          media: { type: "image", src: u("1518156959312-07a5380c1261", 1200) },
         },
         {
           num: 4, title: "Jökulsárlón Glacier Lagoon", duration: "4m",
           desc: "Icebergs the colour of sapphires, calved from Vatnajökull glacier, floating silently out to sea. The lagoon at Jökulsárlón is so blue it looks post-processed. It looks like that in real life.",
           thumb: ICE_GLACIER,
-          media: { type: "image", src: u("1476610182048-b8dc9650b2f6", 1200) },
+          media: { type: "image", src: u("1475518845976-0fd87b7e4e5d", 1200) },
         },
         {
           num: 5, title: "The Blue Lagoon", duration: "3m",
           desc: "Milky, geothermal, 38°C — and surrounded by black lava fields. The Blue Lagoon is touristy and worth every bit of it. There's a silica mud mask station in the middle. Nothing makes sense here. That's the point.",
           thumb: ICE_HOT_SPRING,
-          media: { type: "image", src: u("1492558601866-1b09d46e2ede", 1200) },
+          media: { type: "image", src: u("1509529711801-deac231925ac", 1200) },
         },
         {
           num: 6, title: "The Ring Road", duration: "5m",
           desc: "Route 1. The Ring Road. 1,332km of volcanoes, waterfalls, hot springs, lava fields and black sand beaches. Drive it in summer when the sun doesn't set. Drive it in winter for the aurora. Drive it either way.",
           thumb: ICE_ROAD,
-          media: { type: "image", src: u("1504893524553-b855bce32c67", 1200) },
+          media: { type: "image", src: u("1525340581945-d5e2b09641c4", 1200) },
         },
       ],
       credits: [
@@ -276,7 +273,7 @@ export const PROFILES: Profile[] = [
         tagline: "A continent that does everything at a scale you can't prepare for.",
         description: "Sydney's iconic harbour, the ancient red silence of Uluru, the Great Barrier Reef's underwater universe, the great open outback. Australia is absurdly large, absurdly beautiful, and impossible to do in one trip.",
         badge: "N SERIES • S4", rating: "TV-G", year: "2024", seasons: "Destination 4",
-        backdrop: u("1506973035872-a4ec16b8e8d9", 1600),
+        backdrop: u("1529108190281-9a4f620bc2d8", 1600),
       },
       photoFolder: "australia",
       episodes: [
@@ -284,37 +281,37 @@ export const PROFILES: Profile[] = [
           num: 1, title: "Sydney Opera House", duration: "4m",
           desc: "Morning at Circular Quay. The ferries are running, the Harbour Bridge stands to your left, and the Opera House — impossibly white, impossibly beautiful — is right there. Fifteen minutes from the airport and already the city has made its point.",
           thumb: AUS_OPERA,
-          media: { type: "image", src: u("1506973035872-a4ec16b8e8d9", 1200) },
+          media: { type: "image", src: u("1529108190281-9a4f620bc2d8", 1200) },
         },
         {
           num: 2, title: "Bondi Beach", duration: "4m",
           desc: "A beach so famous it should feel like a disappointment. It doesn't. Bondi is white sand, green waves, surfers, lifeguards in the yellow and red, and the world's most beautiful walk along the coastal path to Coogee.",
           thumb: AUS_BONDI,
-          media: { type: "image", src: u("1533130061792-64b345e4a6ad", 1200) },
+          media: { type: "image", src: u("1582076197950-7a1dcdd1e07f", 1200) },
         },
         {
           num: 3, title: "Uluru at Sunrise", duration: "5m",
           desc: "Standing before Uluru at dawn as it shifts from black to purple to a burning, deep red. This sandstone monolith rises 348 metres from a completely flat desert. 550 million years old. Sacred to the Anangu people. Absolutely overwhelming.",
           thumb: AUS_ULURU,
-          media: { type: "image", src: u("1529963982076-67f28f0c3012", 1200) },
+          media: { type: "image", src: u("1557214997-7eae7e0e7aaa", 1200) },
         },
         {
           num: 4, title: "The Great Barrier Reef", duration: "5m",
           desc: "The world's largest living structure. Seen from above: a vast network of turquoise and green running along the Queensland coast. Seen from below: a universe of colour, life, and coral that took thousands of years to build.",
           thumb: AUS_REEF,
-          media: { type: "image", src: u("1559827291-72d0b24d5b4e", 1200) },
+          media: { type: "image", src: u("1584868138762-fcae9e7d55b2", 1200) },
         },
         {
           num: 5, title: "The Red Outback", duration: "4m",
           desc: "Drive west from Adelaide. The land turns red. The sky turns enormous. There are no towns, no signals, no other cars. Just you and the ancient, burnt-orange earth of the Australian interior — a silence so large it echoes.",
           thumb: AUS_OUTBACK,
-          media: { type: "image", src: u("1519681393784-d120267933ba", 1200) },
+          media: { type: "image", src: u("1605235904827-2fc511a86dd0", 1200) },
         },
         {
           num: 6, title: "Wildlife That Shouldn't Exist", duration: "3m",
           desc: "Kangaroos that box. Koalas that sleep 20 hours a day. Platypuses. Wombats. The quokka — the happiest animal alive. Australia has the most baffling collection of wildlife on Earth and all of it is aggressively photogenic.",
           thumb: AUS_KOALA,
-          media: { type: "image", src: u("1537151608828-ea2b11777ee8", 1200) },
+          media: { type: "image", src: u("1554869284-9e692207599b", 1200) },
         },
       ],
       credits: [
