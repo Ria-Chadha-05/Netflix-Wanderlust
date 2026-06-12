@@ -6,7 +6,7 @@
 
 A cinematic travel experience inspired by Netflix's browsing interface, allowing users to explore dream destinations through immersive visuals, interactive destination cards, and a modern streaming-platform-inspired layout.
 
-Built to practice **responsive design, animations, modern UI development, and interactive user experiences.**
+Built to practice **responsive design, animations, modern UI development, and interactive user experiences**.
 
 </div>
 
@@ -16,24 +16,31 @@ Built to practice **responsive design, animations, modern UI development, and in
 
 Wanderlust transforms travel discovery into a Netflix-like experience where destinations are presented as featured content.
 
-Users can browse through curated locations, explore destination highlights, and enjoy a visually engaging interface designed to make travel inspiration feel interactive and cinematic.
+Users can browse curated locations, explore destination highlights, and enjoy a visually engaging interface designed to make travel inspiration feel interactive and cinematic.
+
+This project was built as a front-end design and interaction exercise, with a strong focus on layout polish, motion, responsiveness, and storytelling through UI.
+
 ---
 
-## 🚀 Live Demo
+## 🎬 Demo
 
-🔗 https://your-vercel-url.vercel.app
+<p align="center">
+  <a href="https://youtu.be/II4MDVQUB_Q">
+    <img src="https://img.youtube.com/vi/II4MDVQUB_Q/maxresdefault.jpg" width="800">
+  </a>
+</p>
 
 ---
 
 ## ✨ Features
 
-* Netflix-inspired travel browsing experience
-* Interactive destination showcase
-* Smooth animations and transitions
-* Responsive design across devices
-* Featured destination hero sections
-* Modern travel-focused UI
-* Clean and intuitive navigation
+- Netflix-inspired travel browsing experience
+- Interactive destination showcase
+- Smooth animations and transitions
+- Responsive design across devices
+- Featured destination hero sections
+- Modern travel-focused UI
+- Clean and intuitive navigation
 
 ---
 
@@ -65,15 +72,14 @@ Users can browse through curated locations, explore destination highlights, and 
 ## 📂 Project Structure
 
 ```text
-Wanderlust
+Wanderlust/
 │
-├── public
-│
-├── src
-│   ├── assets
-│   ├── components
-│   ├── pages
-│   ├── routes
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── routes/
 │   └── main.tsx
 │
 ├── index.html
@@ -87,9 +93,7 @@ Wanderlust
 
 ## 📸 Preview
 
-<p align="center">
-  <img src="./assets/wanderlust-preview.png" width="800">
-</p>
+Preview is available in the project demo video on YouTube.
 
 ---
 
@@ -125,12 +129,12 @@ npm run dev
 
 This project helped practice:
 
-* Responsive UI design
-* Interactive user experiences
-* Front-end architecture with React
-* Component-based development
-* Modern animations using Framer Motion
-* Travel-focused storytelling through UI
+- Responsive UI design
+- Interactive user experiences
+- Front-end architecture with React
+- Component-based development
+- Modern animations using Framer Motion
+- Travel-focused storytelling through UI
 
 ---
 
@@ -145,5 +149,3 @@ It is a travel experience inspired by Netflix-style content browsing and is **no
 ## 👩‍💻 Author
 
 **Ria Chadha**
-
----
